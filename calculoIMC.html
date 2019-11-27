@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cálculo de IMC 26/11/19</title>
+</head>
+<body>
+
+    <script>
+    
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+
+    }
+
+
+function calculoIMC(altura, peso){
+        return Math.round (peso /(altura*altura));
+    }
+    
+var nome = prompt("Qual o seu nome?");
+var idade = prompt("Qual a sua idade?");
+var peso = prompt("Qual o seu peso?");
+var altura = prompt("Qual a sua altura?");
+
+var resultadoIMC = calculoIMC(altura, peso);
+
+mostra("O IMC de " + nome + " é " + resultadoIMC);
+pulaLinha();
+
+if(resultadoIMC < 16){
+
+mostra(nome + " você está com baixo peso muito grave.");
+
+}
+
+else if(resultadoIMC == 16 && resultadoIMC <= 16.99){
+
+mostra(nome + " você está com baixo peso grave.");
+
+}
+
+else if(resultadoIMC >17 && resultadoIMC <= 18.49){
+
+mostra(nome + " você está com baixo peso.");
+}
+
+else if(resultadoIMC >18.50 && resultadoIMC <= 24.99){
+
+mostra(nome + " você está no peso normal.");
+}
+
+else if(resultadoIMC >25 && resultadoIMC <= 29.99){
+
+mostra(nome + " você está com sobrepeso.");
+}
+
+
+else if(resultadoIMC >30 && resultadoIMC <= 34.99){
+
+mostra(nome + " você está com Obesidade I");
+}
+
+else if(resultadoIMC >35 && resultadoIMC <= 39.99){
+
+mostra(nome + " você está com Obesidade II");
+}
+
+else {
+
+mostra(nome + " você está com Obesidade III.");
+}
+
+
+
+    </script>
+    
+</body>
+</html>
+
+
+
