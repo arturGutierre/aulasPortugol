@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+        function pulaLinha() {
+
+        
+        document.write("<br>");
+
+    }
+
+        function mostra(frase) {
+
+        
+        document.write(frase);
+        pulaLinha();
+
+        }
+
+        
+        function menorValor(a, b, c) {
+  
+            if(a > b && b > c ){
+
+            return c;
+            }
+
+            else if (a > b && c > b) {
+
+           return b;
+
+            }
+
+            else return a;
+
+            }
+
+
+            
+            var primeiroNumero = prompt("Insira um número:");
+            var segundoNumero = prompt("Insira um número:");
+            var terceiroNumero = prompt("Insira um número:");
+
+            var menor = menorValor(primeiroNumero,segundoNumero,terceiroNumero);
+
+            
+
+
+     
+            mostra(primeiroNumero);
+            mostra(segundoNumero);
+            mostra(terceiroNumero);
+            mostra("O menor número entre  " +  primeiroNumero  + "," + segundoNumero + " e " +  terceiroNumero  + " é " + menor + ".");
+
+            
+
+           
+                var frase1 = prompt("Insira o seu nome: ");
+                var frase2 = prompt("Insira o seu nome: ");
+                var frase3 = prompt("Insira o seu nome: ");
+                var fraseConcatenada = frase1.concat(" ",frase2," ", frase3);
+                document.write(fraseConcatenada + ".");
+            
+            
+                    
+            
+    </script>
+
+</body>
+</html>
